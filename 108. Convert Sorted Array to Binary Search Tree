@@ -1,0 +1,22 @@
+
+
+class Solution {
+private:
+    TreeNode* convertBST(int left, int right, vector<int>& arr)
+    {
+        /* if i dont have any element in array then my right becomes
+           -1 cause my right is my size and my size is 0 - 1 means
+           -1 so from that i can say i don't have element and return
+           nullptr.
+        */
+        if(left > right)
+        {
+            return nullptr;
+        }
+        // calculate the value of mid
+        /*
+           we write left + ((right - left) / 2) cause at some point
+           if we write (left + right) / 2 will go outside of my 
+           integer if my left and right both are big number in that
+           case this type of probelm is occurs so for that we use
+           that left + ((right - left) / 2) both gives sa
